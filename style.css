@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border: 3px solid black;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  height: 450px;
+  width: 400px;
+  background: linear-gradient(to bottom, rgb(13, 207, 204), rgb(4, 73, 152));
+}
+.heading {
+  grid-area: 1/1/2/5; /* row-start/column-start/row-end/column-end */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px;
+  gap: 15px;
+  /* border: 1px solid black; */
+}
+.heading .description {
+  color: rgb(1, 63, 44);
+  font-weight: bold;
+  background-color: white;
+  padding: 10px;
+}
+.input-container {
+  grid-area: 2/1/4/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 7.5px 0px 15px;
+  padding: 5px;
+  /* border: 1px solid black; */
+}
+
+.input-container .guess {
+  height: 100px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 75px;
+  /* padding: 0px 0px 0px 10px; */
+  text-align: center;
+}
+
+.score-container {
+  grid-area: 2/3/4/5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 15px 0px 7.5px;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+
+.score-container .number {
+  border: 2px solid black;
+  background-color: white;
+  height: 100px;
+  width: 150px;
+  border-radius: 10px;
+  padding: 7px;
+  text-align: center;
+  font-size: 75px;
+}
+.score-container .score-box {
+  font-weight: 600;
+  font-size: large;
+}
+.score-container .highscore-box {
+  font-weight: 600;
+  font-size: large;
+}
+.reset-container {
+  grid-area: 4/1/5/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 10px;
+  /* border: 1px solid black; */
+}
+
+.button {
+  padding: 10px;
+  border-radius: 15px;
+  border: 2px solid blue;
+  height: 40px;
+  width: 80px;
+  font-size: medium;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
