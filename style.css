@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 .container {
-  border: 3px solid black;
+  border: 3px solid hwb(0 0% 100%);
   border-radius: 25px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -34,7 +34,7 @@ body {
   /* border: 1px solid black; */
 }
 .heading .description {
-  color: rgb(1, 63, 44);
+  color: #013f2c;
   font-weight: bold;
   background-color: white;
   padding: 10px;
